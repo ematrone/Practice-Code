@@ -1,4 +1,4 @@
-int number=400;
+int number=500;
 float[] x=new float[number];
 float[] y=new float[number];
 float[] sz=new float[number];
@@ -34,10 +34,11 @@ void draw() {
   if (y[i]+sz[i]/2>=height) {
     y[i]=height-sz[i]/2;
     v[i]=-v[i];
+    xv[i]=xv[i]*.95;
    
   }
   if (x[i]>=width || x[i]<=0) {
-    xv[i]=-xv[i];
+    xv[i]=-xv[i]*.9;
   }
   v[i]=v[i]-a;
   y[i]=y[i]-v[i];}
