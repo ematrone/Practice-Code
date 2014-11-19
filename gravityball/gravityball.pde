@@ -1,4 +1,4 @@
-int number=500;
+int number=1;
 float[] x=new float[number];
 float[] y=new float[number];
 float[] sz=new float[number];
@@ -10,7 +10,7 @@ float a=1;
 
 
 void setup() {
-  frameRate(30);
+  frameRate(60);
   size(displayWidth, displayHeight);
 colorMode(HSB,360,100,100,100);
 
@@ -25,7 +25,8 @@ colorMode(HSB,360,100,100,100);
   
 
 void draw() {
-  background(360);
+  noStroke();
+  //background(360);
   fill(0);
   for(int i=0; i<x.length; i++){
     fill(c[i],80,80,60);
