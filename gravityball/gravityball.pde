@@ -1,4 +1,4 @@
-int number=1;
+int number=10;
 float[] x=new float[number];
 float[] y=new float[number];
 float[] sz=new float[number];
@@ -31,6 +31,7 @@ void draw() {
   for(int i=0; i<x.length; i++){
     fill(c[i],80,80,60);
   circle(x[i], y[i], sz[i]);
+  c[i]=c[i]+.6;
   x[i]=x[i]+xv[i];
   if (y[i]+sz[i]/2>=height) {
     y[i]=height-sz[i]/2;
